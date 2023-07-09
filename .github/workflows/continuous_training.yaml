@@ -19,7 +19,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Train model
         env:
-          WHYLOGS_ACCOUNT_KEY: ${{ secrets.WHYLOGS_ACCOUNT_KEY }}}
+          WHYLABS_API_KEY: ${{ secrets.WHYLABS_API_KEY }}}
+          WHYLABS_DEFAULT_ORG_ID: ${{ secrets.WHYLABS_DEFAULT_ORG_ID }}}
         run: |
           pip3 install virtualenv
           virtualenv venv

@@ -4,7 +4,8 @@ jobs:
   testing-api:
     runs-on: ubuntu-latest
     env:
-      WHYLOGS_ACCOUNT_KEY: ${{ secrets.WHYLOGS_ACCOUNT_KEY }}
+      WHYLABS_API_KEY: ${{ secrets.WHYLABS_API_KEY }}
+      WHYLABS_DEFAULT_ORG_ID: ${{ secrets.WHYLABS_DEFAULT_ORG_ID }}}
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
