@@ -1,0 +1,12 @@
+numpy
+pandas
+seaborn
+matplotlib
+scikit-learn
+mlflow
+prefect==2.7.3
+pydantic==1.10.11
+pytest
+whylogs<1.0.0
+evidently==0.1.55.dev0
+sqlalchemy==1.4.20
