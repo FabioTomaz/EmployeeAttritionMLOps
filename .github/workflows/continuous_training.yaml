@@ -26,7 +26,6 @@ jobs:
           WHYLABS_API_KEY: ${{ secrets.WHYLABS_API_KEY }}}
           WHYLABS_DEFAULT_ORG_ID: ${{ secrets.WHYLABS_DEFAULT_ORG_ID }}}
         run: |
-          apt install python3.9-venv
           pip3 install virtualenv
           virtualenv venv
           source venv/bin/activate
