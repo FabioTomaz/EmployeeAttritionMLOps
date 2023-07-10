@@ -4,3 +4,4 @@ mlruns
 *key.txt
 *.json
 .pytest_cache
+*.sqllite
