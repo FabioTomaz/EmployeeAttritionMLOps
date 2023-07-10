@@ -17,11 +17,16 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9' 
       - name: Train model
         env:
           WHYLABS_API_KEY: ${{ secrets.WHYLABS_API_KEY }}}
           WHYLABS_DEFAULT_ORG_ID: ${{ secrets.WHYLABS_DEFAULT_ORG_ID }}}
         run: |
+          apt install python3.9-venv
           pip3 install virtualenv
           virtualenv venv
           source venv/bin/activate
